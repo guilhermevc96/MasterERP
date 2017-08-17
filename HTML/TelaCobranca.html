@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Inadimplentes</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+		        <li class="active"><a href="#">MasterERP <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#"><span>Cobranças</span></a></li>
+		        <li><a href="#"><span>Vendas<span></a></li>
+		    </ul>
+
+		    <ul class="nav navbar-nav navbar-right">
+		    	<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"><span></a></li>
+		    </ul>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="col-md-12">
+
+				<div class="row">
+					<form type="post">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+							    <center><span><b>Inadimplentes</b></span></center>
+							</div>
+						  	<div class="panel-body">
+
+							  	<div class="col-md-5">
+							  		<span><b>Filtrar por:</b></span>
+									<select class="form-control">
+										<option>--</option>
+										<option>Valor da divida</option>
+										<option>Valor Restante</option>
+										<option>Tempo de Inadimplência</option>
+									</select>
+								</div>
+								<div class="col-md-7">
+									<span><b>Digite o Nome ou CPF:</b></span>
+									<input type="text" placeholder="CPF ou NOME" class="form-control">
+								</div>
+								
+						  	</div>
+						  	<center><input type="submit" class="btn btn-success btn-lg" value="pesquisar"></center><br>
+						</div>
+					</form>
+				</div>
+
+				<div class="row">
+					<div class="panel panel-primary">
+						<table class="table table-bordered striped">
+							<tr>
+							    <th>Nome</th>
+							    <th>CPF</th>
+							    <th>Valor da divida</th>
+								<th>Data</th>
+							</tr>
+							<tr>
+							    <td><span class="glyphicon glyphicon-search" style="cursor: pointer"> Moises Ribeiro</span></td>
+								<td>123.456.789-9</td>
+								<td>R$3.000,00</td>
+								<td>11 Jan, 8:56 AM</td>
+							</tr>
+							<tr>
+							    <td><span class="glyphicon glyphicon-search" style="cursor: pointer"> Michael Gonçalves</span></td>
+								 <td>959.123.406-8</td>
+								 <td>R$2.300,00</td>
+								 <td>15 Out, 7:12 PM</td>
+							</tr>
+							<tr>
+							  	<td><span class="glyphicon glyphicon-search" style="cursor: pointer"> Maria de Abreu</span></td>
+								<td>213.486.789-9</td>
+								<td>R$500,00</td>
+								<td>05 Ago, 4:34 PM</td>
+							</tr>
+							<tr>
+								<td><span class="glyphicon glyphicon-search" style="cursor: pointer"> Jane Silva</span></td>
+								<td>596.369.598-5</td>
+								<td>R$4.201,92</td>
+								<td>09 Jun, 10:08 AM</td>
+							</tr>
+							<tr>
+								<td><span class="glyphicon glyphicon-search" style="cursor: pointer"> Róger Guédes</span></td>
+								<td>548.741.142-2</td>
+								<td>R$2.302,15</td>
+								<td>29 Mar, 6:00 PM</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
